@@ -47,3 +47,8 @@ To build:
 ```bash
 bun run build
 ```
+
+To publish:
+```bash
+bun run pub
+```
