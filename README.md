@@ -30,7 +30,7 @@ import { yeet } from "yeet-ts";
 
 ### Deno
 ```typescript
-import { yeet } from "https://deno.land/x/yeet@v1.0.1/src/mod.ts";
+import { yeet } from "https://deno.land/x/yeet@v1.0.2/src/mod.ts";
 ```
 
 
