@@ -1,0 +1,26 @@
+{
+  "name": "yeet-ts",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "author": "Michal Grňo",
+  "description": "A poor man's throw expression",
+  "type": "module",
+  "module": "./dist/mod.js",
+  "types": "./dist/mod.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/mod.d.ts",
+      "import": "./dist/mod.js"
+    }
+  },
+  "scripts": {
+    "build": "bun run ./build.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bun-plugin-dts": "^0.2.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
