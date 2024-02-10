@@ -1,6 +1,6 @@
 {
   "name": "yeet-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "CC0-1.0",
   "author": "Michal Grňo",
   "description": "A poor man's throw expression",
@@ -18,7 +18,10 @@
     }
   },
   "scripts": {
-    "build": "bun run ./build.ts"
+    "build": "bun run ./build.ts",
+    "publish:npm": "npm publish",
+    "publish:deno": "git tag $(nu -c 'open package.json | get version | prepend v | str join') && git push --tags",
+    "publish": "npm run publish:npm && npm run publish:deno"
   },
   "devDependencies": {
     "@types/bun": "latest",
