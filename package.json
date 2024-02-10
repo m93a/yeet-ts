@@ -1,6 +1,6 @@
 {
   "name": "yeet-ts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "CC0-1.0",
   "author": "Michal Grňo",
   "description": "A poor man's throw expression",
@@ -9,6 +9,9 @@
     "url": "git+https://github.com/m93a/yeet-ts.git"
   },
   "type": "module",
+  "files": [
+    "/dist"
+  ],
   "module": "./dist/mod.js",
   "types": "./dist/mod.d.ts",
   "exports": {
